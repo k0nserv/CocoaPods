@@ -178,7 +178,6 @@ module Pod
       it "returns the clean paths" do
         @installer.send(:download_source)
         paths = @installer.send(:clean_paths)
-        p "temporary_directory: #{temporary_directory}"
         relative_paths = paths.map { |p| p.gsub("#{temporary_directory}/", '')}
         paths_without_git = relative_paths.reject { |p| p.include? 'Pods/BananaLib/.git' }
         paths_without_git.sort.should == [
