@@ -107,10 +107,10 @@ EOS
 
         def installed_plugins
           Hash[Gem::Specification.
-            sort_by{ |g| [g.name.downcase, g.version] }.
-            group_by{ |g| g.name }.
-            select { |k,v| k.start_with? Command.plugin_prefix }.
-            map { |k,v| [k, v.sample.version.to_s] }]
+            sort_by { |g| [g.name.downcase, g.version] }.
+            group_by { |g| g.name }.
+            select { |k, v| k.start_with? Command.plugin_prefix }.
+            map { |k, v| [k, v.sample.version.to_s] }]
         end
 
         def plugins_string
@@ -118,7 +118,7 @@ EOS
           max_name_length = plugins.keys.map(&:length).max
           plugins.map do |name, version|
             "#{name.ljust(max_name_length)} : #{version}"
-          end.join("\n").tap {|p| puts p}
+          end.join("\n")
         end
 
         def repo_information
