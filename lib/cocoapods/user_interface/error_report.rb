@@ -118,7 +118,7 @@ EOS
           max_name_length = plugins.keys.map(&:length).max
           plugins.map do |name, version|
             "#{name.ljust(max_name_length)} : #{version}"
-          end.join("\n")
+          end.sort.join("\n")
         end
 
         def repo_information
