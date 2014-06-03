@@ -5,6 +5,9 @@ To install or update CocoaPods see this [guide](http://docs.cocoapods.org/guides
 
 ## Master
 
+* Added support for swift source files.
+  [Kyle Fuller][kylef]
+
 * Fixed pod repo push to first check if Specs directory exists and if so push there.
   [Edward Valentini](edwardvalentini)
   [#2060](https://github.com/CocoaPods/CocoaPods/issues/2060)
