@@ -13,6 +13,10 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
   [Samuel Giddins](https://github.com/segiddins)
   [#3542](https://github.com/CocoaPods/CocoaPods/issues/3542)
 
+* The notice about a new version being available will now include our
+  recommendation of using the latest version stable version
+  [Hugo Tunius](https://github.com/k0nserv)
+
 ##### Bug Fixes
 
 * Public headers of vendored frameworks are now automatically linked in
