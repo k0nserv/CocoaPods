@@ -13,6 +13,11 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
   [Samuel Giddins](https://github.com/segiddins)
   [#3542](https://github.com/CocoaPods/CocoaPods/issues/3542)
 
+* CocoaPods will validate your podfile and try to identify problems 
+  and conflicts in how you've specified the dependencies
+  [Hugo Tunius](https://github.com/k0nserv)
+  [#995](https://github.com/CocoaPods/CocoaPods/issues/995)
+
 ##### Bug Fixes
 
 * Public headers of vendored frameworks are now automatically linked in
